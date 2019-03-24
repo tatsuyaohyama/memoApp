@@ -21,9 +21,13 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Caj-VB-VTd">
                                 <rect key="frame" x="0.0" y="88" width="375" height="690"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="NSj-Cr-FNX" id="vC6-HY-4Sg"/>
+                                    <outlet property="delegate" destination="NSj-Cr-FNX" id="pS8-pr-aa2"/>
+                                </connections>
                             </tableView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OPx-os-Wyp">
-                                <rect key="frame" x="166" y="694" width="44" height="44"/>
+                                <rect key="frame" x="165.66666666666666" y="694" width="44" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="44" id="evs-6R-5GK"/>
                                     <constraint firstAttribute="height" constant="44" id="qED-sw-s0N"/>
@@ -45,6 +49,9 @@
                         <viewLayoutGuide key="safeArea" id="cjU-v5-5ZU"/>
                     </view>
                     <navigationItem key="navigationItem" title="メモ一覧" id="hvg-5M-0L7"/>
+                    <connections>
+                        <outlet property="tableView" destination="Caj-VB-VTd" id="Xqa-Eo-lht"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NKq-rx-GuY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -91,6 +98,7 @@
                             <constraint firstItem="w7M-Fn-Z6p" firstAttribute="leading" secondItem="u5a-tp-OCX" secondAttribute="leading" id="Z0v-CH-Ela"/>
                             <constraint firstAttribute="trailing" secondItem="w7M-Fn-Z6p" secondAttribute="trailing" id="pv6-xj-rVV"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="qWF-XU-Hme"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2kt-H7-gWP" userLabel="First Responder" sceneMemberID="firstResponder"/>
