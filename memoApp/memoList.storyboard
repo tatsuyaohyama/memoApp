@@ -17,7 +17,19 @@
                     <view key="view" contentMode="scaleToFill" id="cat-ZY-HP1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Caj-VB-VTd">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Caj-VB-VTd" firstAttribute="top" secondItem="cjU-v5-5ZU" secondAttribute="top" id="R2B-FG-3MD"/>
+                            <constraint firstItem="cjU-v5-5ZU" firstAttribute="trailing" secondItem="Caj-VB-VTd" secondAttribute="trailing" id="VXX-7K-gdJ"/>
+                            <constraint firstItem="cjU-v5-5ZU" firstAttribute="bottom" secondItem="Caj-VB-VTd" secondAttribute="bottom" id="ejP-ei-8hc"/>
+                            <constraint firstItem="Caj-VB-VTd" firstAttribute="leading" secondItem="cjU-v5-5ZU" secondAttribute="leading" id="zSX-9D-o5o"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="cjU-v5-5ZU"/>
                     </view>
                     <navigationItem key="navigationItem" title="メモ一覧" id="hvg-5M-0L7"/>
