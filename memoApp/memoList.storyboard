@@ -23,7 +23,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OPx-os-Wyp">
-                                <rect key="frame" x="310" y="700" width="44" height="44"/>
+                                <rect key="frame" x="166" y="694" width="44" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="44" id="evs-6R-5GK"/>
                                     <constraint firstAttribute="height" constant="44" id="qED-sw-s0N"/>
@@ -35,13 +35,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="OPx-os-Wyp" firstAttribute="top" secondItem="cjU-v5-5ZU" secondAttribute="top" constant="612" id="8aS-bX-TQ8"/>
-                            <constraint firstItem="OPx-os-Wyp" firstAttribute="leading" secondItem="cjU-v5-5ZU" secondAttribute="leading" constant="310" id="I4K-JX-44B"/>
+                            <constraint firstItem="cjU-v5-5ZU" firstAttribute="bottom" secondItem="OPx-os-Wyp" secondAttribute="bottom" constant="40" id="C3j-Lx-APD"/>
                             <constraint firstItem="Caj-VB-VTd" firstAttribute="top" secondItem="cjU-v5-5ZU" secondAttribute="top" id="R2B-FG-3MD"/>
                             <constraint firstItem="cjU-v5-5ZU" firstAttribute="trailing" secondItem="Caj-VB-VTd" secondAttribute="trailing" id="VXX-7K-gdJ"/>
-                            <constraint firstItem="cjU-v5-5ZU" firstAttribute="bottom" secondItem="OPx-os-Wyp" secondAttribute="bottom" constant="34" id="bM9-Uv-u9a"/>
                             <constraint firstItem="cjU-v5-5ZU" firstAttribute="bottom" secondItem="Caj-VB-VTd" secondAttribute="bottom" id="ejP-ei-8hc"/>
-                            <constraint firstItem="cjU-v5-5ZU" firstAttribute="trailing" secondItem="OPx-os-Wyp" secondAttribute="trailing" constant="21" id="xXD-JG-UCS"/>
+                            <constraint firstItem="OPx-os-Wyp" firstAttribute="centerX" secondItem="cat-ZY-HP1" secondAttribute="centerX" id="yZM-N1-hqg"/>
                             <constraint firstItem="Caj-VB-VTd" firstAttribute="leading" secondItem="cjU-v5-5ZU" secondAttribute="leading" id="zSX-9D-o5o"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cjU-v5-5ZU"/>
