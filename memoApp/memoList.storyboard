@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Memo List View Controller-->
+        <!--メモ一覧-->
         <scene sceneID="bkM-cq-IEc">
             <objects>
                 <viewController id="NSj-Cr-FNX" customClass="memoListViewController" customModule="memoApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -20,7 +20,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="cjU-v5-5ZU"/>
                     </view>
-                    <navigationItem key="navigationItem" id="hvg-5M-0L7"/>
+                    <navigationItem key="navigationItem" title="メモ一覧" id="hvg-5M-0L7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NKq-rx-GuY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
