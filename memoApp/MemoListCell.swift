@@ -8,7 +8,7 @@
 
 import UIKit
 
-class memoListCell: UITableViewCell {
+class MemoListCell: UITableViewCell {
 
     @IBOutlet var memoTitleLabel: UILabel!
 
