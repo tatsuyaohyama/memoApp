@@ -16,6 +16,8 @@
 		2705071E2247AD8000563F86 /* memoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2705071D2247AD8000563F86 /* memoAppUITests.swift */; };
 		2705072C2247B4DB00563F86 /* memoList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2705072B2247B4DB00563F86 /* memoList.storyboard */; };
 		2705072E2247B51000563F86 /* memoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2705072D2247B51000563F86 /* memoListViewController.swift */; };
+		270507312247BB2200563F86 /* memoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2705072F2247BB2200563F86 /* memoListCell.swift */; };
+		270507322247BB2200563F86 /* memoListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 270507302247BB2200563F86 /* memoListCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		2705071F2247AD8000563F86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2705072B2247B4DB00563F86 /* memoList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = memoList.storyboard; sourceTree = "<group>"; };
 		2705072D2247B51000563F86 /* memoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memoListViewController.swift; sourceTree = "<group>"; };
+		2705072F2247BB2200563F86 /* memoListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memoListCell.swift; sourceTree = "<group>"; };
+		270507302247BB2200563F86 /* memoListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = memoListCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				270507092247AD8000563F86 /* Info.plist */,
 				2705072B2247B4DB00563F86 /* memoList.storyboard */,
 				2705072D2247B51000563F86 /* memoListViewController.swift */,
+				270507302247BB2200563F86 /* memoListCell.xib */,
+				2705072F2247BB2200563F86 /* memoListCell.swift */,
 			);
 			path = memoApp;
 			sourceTree = "<group>";
@@ -236,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2705072C2247B4DB00563F86 /* memoList.storyboard in Resources */,
+				270507322247BB2200563F86 /* memoListCell.xib in Resources */,
 				270507082247AD8000563F86 /* LaunchScreen.storyboard in Resources */,
 				270507052247AD8000563F86 /* Assets.xcassets in Resources */,
 				270507032247AD7E00563F86 /* Main.storyboard in Resources */,
@@ -266,6 +273,7 @@
 				270507002247AD7E00563F86 /* ViewController.swift in Sources */,
 				270506FE2247AD7E00563F86 /* AppDelegate.swift in Sources */,
 				2705072E2247B51000563F86 /* memoListViewController.swift in Sources */,
+				270507312247BB2200563F86 /* memoListCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
