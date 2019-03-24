@@ -18,6 +18,7 @@
 		2705072E2247B51000563F86 /* memoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2705072D2247B51000563F86 /* memoListViewController.swift */; };
 		270507312247BB2200563F86 /* memoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2705072F2247BB2200563F86 /* memoListCell.swift */; };
 		270507322247BB2200563F86 /* memoListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 270507302247BB2200563F86 /* memoListCell.xib */; };
+		2705073422482E4900563F86 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2705073322482E4900563F86 /* ContainerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		2705072D2247B51000563F86 /* memoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memoListViewController.swift; sourceTree = "<group>"; };
 		2705072F2247BB2200563F86 /* memoListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memoListCell.swift; sourceTree = "<group>"; };
 		270507302247BB2200563F86 /* memoListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = memoListCell.xib; sourceTree = "<group>"; };
+		2705073322482E4900563F86 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				2705072D2247B51000563F86 /* memoListViewController.swift */,
 				270507302247BB2200563F86 /* memoListCell.xib */,
 				2705072F2247BB2200563F86 /* memoListCell.swift */,
+				2705073322482E4900563F86 /* ContainerViewController.swift */,
 			);
 			path = memoApp;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			files = (
 				270507002247AD7E00563F86 /* ViewController.swift in Sources */,
 				270506FE2247AD7E00563F86 /* AppDelegate.swift in Sources */,
+				2705073422482E4900563F86 /* ContainerViewController.swift in Sources */,
 				2705072E2247B51000563F86 /* memoListViewController.swift in Sources */,
 				270507312247BB2200563F86 /* memoListCell.swift in Sources */,
 			);
