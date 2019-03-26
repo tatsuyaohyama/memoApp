@@ -48,7 +48,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cjU-v5-5ZU"/>
                     </view>
-                    <navigationItem key="navigationItem" title="メモ一覧" id="hvg-5M-0L7"/>
+                    <navigationItem key="navigationItem" title="メモ一覧" id="hvg-5M-0L7">
+                        <barButtonItem key="backBarButtonItem" title="戻る" id="8Mk-iD-Ig2"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="Caj-VB-VTd" id="Xqa-Eo-lht"/>
                     </connections>
