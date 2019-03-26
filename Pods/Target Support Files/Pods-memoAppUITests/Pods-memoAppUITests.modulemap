@@ -1,0 +1,6 @@
+framework module Pods_memoAppUITests {
+  umbrella header "Pods-memoAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
