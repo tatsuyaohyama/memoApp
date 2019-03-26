@@ -20,7 +20,7 @@ class DetailsViewController: UIViewController {
     }
 
     func setRightBarButtonItem() {
-        let rightButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(add))
+        let rightButton = UIBarButtonItem(title: "完了", style: .plain, target: self, action: #selector(add))
         self.navigationItem.rightBarButtonItem = rightButton
     }
 
