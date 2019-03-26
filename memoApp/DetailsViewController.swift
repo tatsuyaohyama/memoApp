@@ -16,7 +16,16 @@ class DetailsViewController: UIViewController {
         super.viewDidLoad()
         
         memoTextField.delegate = self
+        setRightBarButtonItem()
+    }
 
+    func setRightBarButtonItem() {
+        let rightButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(add))
+        self.navigationItem.rightBarButtonItem = rightButton
+    }
+
+    @objc func add() {
+        print("hoge")
     }
 }
 
