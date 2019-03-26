@@ -9,16 +9,15 @@
 import UIKit
 
 class ContainerViewController: UIViewController {
-    
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
-    
+
     @IBAction func addMemo(_ sender: Any) {
-        print("hoge")
+        let storyboard = UIStoryboard(name: "Details", bundle: nil)
+        let detailsVC = storyboard.instantiateViewController(withIdentifier: "details")
+        navigationController?.pushViewController(detailsVC, animated: true)
     }
-    
 }
