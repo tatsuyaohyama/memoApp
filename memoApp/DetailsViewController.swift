@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class DetailsViewController: UIViewController {
 
@@ -25,7 +26,20 @@ class DetailsViewController: UIViewController {
     }
 
     @objc func add() {
-        print("hoge")
+        saveMemoData()
+    }
+    
+    func saveMemoData() {
+        let myMemoData: MyData = MyData()
+        if let memoTextData = self.memoTextField.text {
+            myMemoData.memoData = memoTextData
+            let realm = try! Realm()
+            try! realm.write {
+                realm.add(myMemoData)
+            }
+        } else {
+            fatalError()
+        }
     }
 }
 
