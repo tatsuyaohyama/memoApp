@@ -59,6 +59,20 @@ extension MemoListViewController: UITableViewDataSource {
         navigationController?.pushViewController(detailsVC, animated: true)
         tableView.deselectRow(at: indexPath, animated: true)
     }
+
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+
+        if(editingStyle == UITableViewCell.EditingStyle.delete) {
+            do{
+                let realm = try Realm()
+                try realm.write {
+                    realm.delete(self.memoList[indexPath.row])
+                }
+                tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.fade)
+            }catch{
+            }
+        }
+    }
 }
 
 extension MemoListViewController: UITableViewDelegate {
