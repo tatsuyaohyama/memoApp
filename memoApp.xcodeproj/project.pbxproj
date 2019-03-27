@@ -19,6 +19,7 @@
 		270507312247BB2200563F86 /* MemoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2705072F2247BB2200563F86 /* MemoListCell.swift */; };
 		270507322247BB2200563F86 /* MemoListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 270507302247BB2200563F86 /* MemoListCell.xib */; };
 		2705073422482E4900563F86 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2705073322482E4900563F86 /* ContainerViewController.swift */; };
+		2724E035224B0B3400B88F77 /* MemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2724E034224B0B3400B88F77 /* MemoData.swift */; };
 		279E6C06224A072F001B6A3D /* Details.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 279E6C05224A072F001B6A3D /* Details.storyboard */; };
 		279E6C08224A0742001B6A3D /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279E6C07224A0742001B6A3D /* DetailsViewController.swift */; };
 		4C06FD1388E0988C1FE59FD3 /* Pods_memoAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D1B42AFB89980D5DCE3AA68 /* Pods_memoAppUITests.framework */; };
@@ -63,6 +64,7 @@
 		2705072F2247BB2200563F86 /* MemoListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListCell.swift; sourceTree = "<group>"; };
 		270507302247BB2200563F86 /* MemoListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemoListCell.xib; sourceTree = "<group>"; };
 		2705073322482E4900563F86 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		2724E034224B0B3400B88F77 /* MemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoData.swift; sourceTree = "<group>"; };
 		279E6C05224A072F001B6A3D /* Details.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Details.storyboard; sourceTree = "<group>"; };
 		279E6C07224A0742001B6A3D /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		37919DF7E94FC7A134B1FF76 /* Pods-memoAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memoAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-memoAppUITests/Pods-memoAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -123,7 +125,6 @@
 				37919DF7E94FC7A134B1FF76 /* Pods-memoAppUITests.debug.xcconfig */,
 				9B5A24317E1897145C4A3346 /* Pods-memoAppUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -165,6 +166,7 @@
 				2705073322482E4900563F86 /* ContainerViewController.swift */,
 				279E6C05224A072F001B6A3D /* Details.storyboard */,
 				279E6C07224A0742001B6A3D /* DetailsViewController.swift */,
+				2724E034224B0B3400B88F77 /* MemoData.swift */,
 			);
 			path = memoApp;
 			sourceTree = "<group>";
@@ -421,6 +423,7 @@
 				270507002247AD7E00563F86 /* ViewController.swift in Sources */,
 				270506FE2247AD7E00563F86 /* AppDelegate.swift in Sources */,
 				2705073422482E4900563F86 /* ContainerViewController.swift in Sources */,
+				2724E035224B0B3400B88F77 /* MemoData.swift in Sources */,
 				2705072E2247B51000563F86 /* MemoListViewController.swift in Sources */,
 				270507312247BB2200563F86 /* MemoListCell.swift in Sources */,
 				279E6C08224A0742001B6A3D /* DetailsViewController.swift in Sources */,
