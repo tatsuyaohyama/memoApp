@@ -27,7 +27,7 @@ class MemoListViewController: UIViewController {
     func getMemoData() {
         do{
             let realm = try Realm()
-            memoList = realm.objects(MyData.self)
+            memoList = realm.objects(MyData.self).sorted(byKeyPath: "memoData", ascending: true)
             self.tableView.reloadData()
         }catch{
         }
@@ -35,7 +35,7 @@ class MemoListViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.tableView.reloadData()
+        getMemoData()
     }
 }
 
