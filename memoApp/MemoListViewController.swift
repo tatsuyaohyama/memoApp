@@ -21,6 +21,8 @@ class MemoListViewController: UIViewController {
         let nib = UINib(nibName: "MemoListCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "MemoListCell")
         
+        navigationItem.leftBarButtonItem = editButtonItem
+        
         getMemoData()
     }
     
@@ -64,7 +66,7 @@ extension MemoListViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
 
-        if(editingStyle == UITableViewCell.EditingStyle.delete) {
+        if editingStyle == .delete {
             do{
                 let realm = try Realm()
                 try realm.write {
@@ -78,5 +80,19 @@ extension MemoListViewController: UITableViewDataSource {
 }
 
 extension MemoListViewController: UITableViewDelegate {
-
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return .delete
+    }
+    func tableView(_ tableView: UITableView, shouldIndentWhileEditingRowAt indexPath: IndexPath) -> Bool {
+        return false
+    }
+    
+    override func setEditing(_ editing: Bool, animated: Bool) {
+        super.setEditing(editing, animated: animated)
+        self.tableView.isEditing = editing
+    }
 }
