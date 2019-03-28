@@ -54,8 +54,10 @@ extension MemoListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectMemoData = memoList[indexPath.row].memoData
         let storyboard = UIStoryboard(name: "Details", bundle: nil)
-        let detailsVC = storyboard.instantiateViewController(withIdentifier: "details")
+        let detailsVC = storyboard.instantiateViewController(withIdentifier: "details") as! DetailsViewController
+        detailsVC.testData = selectMemoData
         navigationController?.pushViewController(detailsVC, animated: true)
         tableView.deselectRow(at: indexPath, animated: true)
     }
