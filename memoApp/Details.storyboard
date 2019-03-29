@@ -27,10 +27,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="NKR-sx-BF6" firstAttribute="leading" secondItem="CFX-vp-buA" secondAttribute="leading" id="ZMN-dO-ELM"/>
-                            <constraint firstItem="CFX-vp-buA" firstAttribute="trailing" secondItem="NKR-sx-BF6" secondAttribute="trailing" id="ccb-eO-xge"/>
-                            <constraint firstItem="CFX-vp-buA" firstAttribute="bottom" secondItem="NKR-sx-BF6" secondAttribute="bottom" id="ry7-oH-sKf"/>
-                            <constraint firstItem="NKR-sx-BF6" firstAttribute="top" secondItem="CFX-vp-buA" secondAttribute="top" constant="30" id="zYc-3u-eH7"/>
+                            <constraint firstItem="CFX-vp-buA" firstAttribute="bottom" secondItem="NKR-sx-BF6" secondAttribute="bottom" id="2L2-GJ-mJM"/>
+                            <constraint firstAttribute="trailing" secondItem="NKR-sx-BF6" secondAttribute="trailing" id="ce5-gY-sf0"/>
+                            <constraint firstItem="NKR-sx-BF6" firstAttribute="top" secondItem="CFX-vp-buA" secondAttribute="top" constant="30" id="d8Z-DH-Dpc"/>
+                            <constraint firstItem="NKR-sx-BF6" firstAttribute="leading" secondItem="CFX-vp-buA" secondAttribute="leading" id="oak-8I-TPM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CFX-vp-buA"/>
                     </view>
