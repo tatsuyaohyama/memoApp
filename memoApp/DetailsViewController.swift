@@ -33,24 +33,33 @@ class DetailsViewController: UIViewController {
     
     func saveMemoData() {
         let myMemoData: MyData = MyData()
-        if self.editMemoData == nil {
-            if let memoTextData = self.memoTextField.text {
-                myMemoData.memoData = memoTextData
+        if editMemoData == nil {
+            if (self.memoTextField.text?.isEmpty)! {
+                return
+            } else {
+                myMemoData.memoData = self.memoTextField.text!
                 let realm = try! Realm()
                 try! realm.write {
                     realm.add(myMemoData)
                 }
-            } else {
-                fatalError()
+                self.navigationController?.popToRootViewController(animated: true)
             }
         } else {
-            let realm = try! Realm()
-            let results = realm.objects(MyData.self).filter("memoData == %@", self.editMemoData)
-            try! realm.write {
-                results[0].memoData = self.memoTextField.text!
+            if (self.memoTextField.text?.isEmpty)! {
+                let realm = try! Realm()
+                let results = realm.objects(MyData.self).filter("memoData == %@", self.editMemoData)
+                try! realm.write {
+                    realm.delete(results[0])
+                }
+            } else {
+                let realm = try! Realm()
+                let results = realm.objects(MyData.self).filter("memoData == %@", self.editMemoData)
+                try! realm.write {
+                    results[0].memoData = self.memoTextField.text!
+                }
             }
+            self.navigationController?.popToRootViewController(animated: true)
         }
-        self.navigationController?.popToRootViewController(animated: true)
     }
     
     override func viewWillAppear(_ animated: Bool) {
