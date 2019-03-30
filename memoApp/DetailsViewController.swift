@@ -65,8 +65,9 @@ class DetailsViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        let textCount = self.editMemoData!.count
-        memoTextCountLabel.text = String(textCount)
+        if let textCount = self.editMemoData {
+            memoTextCountLabel.text = String(textCount.count)
+        }
         if let memoData = self.editMemoData {
             let realm = try! Realm()
             let results = realm.objects(MyData.self).filter("memoData == %@", memoData)
