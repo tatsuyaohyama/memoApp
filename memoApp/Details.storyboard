@@ -18,24 +18,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NKR-sx-BF6">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vCJ-84-2Fs">
                                 <rect key="frame" x="0.0" y="50" width="375" height="617"/>
-                                <nil key="textColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="CFX-vp-buA" firstAttribute="bottom" secondItem="NKR-sx-BF6" secondAttribute="bottom" id="2L2-GJ-mJM"/>
-                            <constraint firstAttribute="trailing" secondItem="NKR-sx-BF6" secondAttribute="trailing" id="ce5-gY-sf0"/>
-                            <constraint firstItem="NKR-sx-BF6" firstAttribute="top" secondItem="CFX-vp-buA" secondAttribute="top" constant="30" id="d8Z-DH-Dpc"/>
-                            <constraint firstItem="NKR-sx-BF6" firstAttribute="leading" secondItem="CFX-vp-buA" secondAttribute="leading" id="oak-8I-TPM"/>
+                            <constraint firstItem="CFX-vp-buA" firstAttribute="bottom" secondItem="vCJ-84-2Fs" secondAttribute="bottom" id="2Mg-xR-nNS"/>
+                            <constraint firstItem="vCJ-84-2Fs" firstAttribute="top" secondItem="CFX-vp-buA" secondAttribute="top" constant="30" id="ZY6-GO-2VP"/>
+                            <constraint firstItem="CFX-vp-buA" firstAttribute="trailing" secondItem="vCJ-84-2Fs" secondAttribute="trailing" id="cul-Mo-iBg"/>
+                            <constraint firstItem="vCJ-84-2Fs" firstAttribute="leading" secondItem="CFX-vp-buA" secondAttribute="leading" id="sou-PV-k9Z"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CFX-vp-buA"/>
                     </view>
                     <connections>
-                        <outlet property="memoTextField" destination="NKR-sx-BF6" id="juY-vL-oH2"/>
+                        <outlet property="memoTextView" destination="vCJ-84-2Fs" id="HV2-Ni-cA4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f20-5k-iou" userLabel="First Responder" sceneMemberID="firstResponder"/>

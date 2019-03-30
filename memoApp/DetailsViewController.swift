@@ -10,15 +10,14 @@ import UIKit
 import RealmSwift
 
 class DetailsViewController: UIViewController {
-
-    @IBOutlet var memoTextField: UITextField!
+    
+    @IBOutlet var memoTextView: UITextView!
     
     var editMemoData: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        memoTextField.delegate = self
         setRightBarButtonItem()
     }
 
@@ -34,10 +33,10 @@ class DetailsViewController: UIViewController {
     func saveMemoData() {
         let myMemoData: MyData = MyData()
         if editMemoData == nil {
-            if (self.memoTextField.text?.isEmpty)! {
+            if (self.memoTextView.text?.isEmpty)! {
                 return
             } else {
-                myMemoData.memoData = self.memoTextField.text!
+                myMemoData.memoData = self.memoTextView.text!
                 let realm = try! Realm()
                 try! realm.write {
                     realm.add(myMemoData)
@@ -45,7 +44,7 @@ class DetailsViewController: UIViewController {
                 self.navigationController?.popToRootViewController(animated: true)
             }
         } else {
-            if (self.memoTextField.text?.isEmpty)! {
+            if (self.memoTextView.text?.isEmpty)! {
                 let realm = try! Realm()
                 let results = realm.objects(MyData.self).filter("memoData == %@", self.editMemoData)
                 try! realm.write {
@@ -55,7 +54,7 @@ class DetailsViewController: UIViewController {
                 let realm = try! Realm()
                 let results = realm.objects(MyData.self).filter("memoData == %@", self.editMemoData)
                 try! realm.write {
-                    results[0].memoData = self.memoTextField.text!
+                    results[0].memoData = self.memoTextView.text!
                 }
             }
             self.navigationController?.popToRootViewController(animated: true)
@@ -67,16 +66,9 @@ class DetailsViewController: UIViewController {
         if let memoData = self.editMemoData {
             let realm = try! Realm()
             let results = realm.objects(MyData.self).filter("memoData == %@", memoData)
-            self.memoTextField.text = results[0].memoData
+            self.memoTextView.text = results[0].memoData
         } else {
             return
         }
-    }
-}
-
-extension DetailsViewController: UITextFieldDelegate {
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        memoTextField.resignFirstResponder()
-        return true
     }
 }
