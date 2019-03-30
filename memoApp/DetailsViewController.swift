@@ -12,12 +12,14 @@ import RealmSwift
 class DetailsViewController: UIViewController {
     
     @IBOutlet var memoTextView: UITextView!
+    @IBOutlet var memoTextCountLabel: UILabel!
     
     var editMemoData: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        memoTextView.delegate = self
         setRightBarButtonItem()
     }
 
@@ -63,6 +65,8 @@ class DetailsViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        let textCount = self.editMemoData!.count
+        memoTextCountLabel.text = String(textCount)
         if let memoData = self.editMemoData {
             let realm = try! Realm()
             let results = realm.objects(MyData.self).filter("memoData == %@", memoData)
@@ -70,5 +74,12 @@ class DetailsViewController: UIViewController {
         } else {
             return
         }
+    }
+}
+
+extension DetailsViewController: UITextViewDelegate {
+    func textViewDidChange(_ textView: UITextView) {
+        let textCount = self.memoTextView.text.count
+        memoTextCountLabel.text = String(textCount)
     }
 }

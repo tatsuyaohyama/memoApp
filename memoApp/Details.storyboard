@@ -24,23 +24,35 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="reG-Te-sFe">
+                                <rect key="frame" x="0.0" y="20" width="375" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.98134985674793485" blue="0.90677225986940468" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="CFX-vp-buA" firstAttribute="bottom" secondItem="vCJ-84-2Fs" secondAttribute="bottom" id="2Mg-xR-nNS"/>
+                            <constraint firstItem="vCJ-84-2Fs" firstAttribute="top" secondItem="reG-Te-sFe" secondAttribute="bottom" id="D87-LS-X1c"/>
+                            <constraint firstItem="reG-Te-sFe" firstAttribute="trailing" secondItem="CFX-vp-buA" secondAttribute="trailing" id="J9b-PP-Olt"/>
                             <constraint firstItem="vCJ-84-2Fs" firstAttribute="top" secondItem="CFX-vp-buA" secondAttribute="top" constant="30" id="ZY6-GO-2VP"/>
                             <constraint firstItem="CFX-vp-buA" firstAttribute="trailing" secondItem="vCJ-84-2Fs" secondAttribute="trailing" id="cul-Mo-iBg"/>
+                            <constraint firstItem="reG-Te-sFe" firstAttribute="leading" secondItem="CFX-vp-buA" secondAttribute="leading" id="jES-uI-cNa"/>
+                            <constraint firstItem="reG-Te-sFe" firstAttribute="top" secondItem="CFX-vp-buA" secondAttribute="top" id="k1w-Xf-0XJ"/>
                             <constraint firstItem="vCJ-84-2Fs" firstAttribute="leading" secondItem="CFX-vp-buA" secondAttribute="leading" id="sou-PV-k9Z"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CFX-vp-buA"/>
                     </view>
                     <connections>
+                        <outlet property="memoTextCountLabel" destination="reG-Te-sFe" id="gNO-VD-AcQ"/>
                         <outlet property="memoTextView" destination="vCJ-84-2Fs" id="HV2-Ni-cA4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f20-5k-iou" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="89" y="170"/>
+            <point key="canvasLocation" x="88.799999999999997" y="169.56521739130437"/>
         </scene>
     </scenes>
 </document>
