@@ -21,15 +21,41 @@ class DetailsViewController: UIViewController {
         
         memoTextView.delegate = self
         setRightBarButtonItem()
+        setLeftBarButtonItem()
     }
 
     func setRightBarButtonItem() {
         let rightButton = UIBarButtonItem(title: "完了", style: .plain, target: self, action: #selector(add))
         self.navigationItem.rightBarButtonItem = rightButton
     }
+    
+    func setLeftBarButtonItem() {
+        let leftButton = UIBarButtonItem(title: "戻る", style: .plain, target: self, action: #selector(back))
+        self.navigationItem.leftBarButtonItem = leftButton
+    }
 
     @objc func add() {
         saveMemoData()
+    }
+        
+    @objc func back() {
+        displayAlert()
+    }
+    
+    func displayAlert() {
+        let alert = UIAlertController(title: nil, message: "テキストを破棄してもよろしいですか？", preferredStyle: .alert)
+
+        let okAlertAction = UIAlertAction(title: "OK", style: .default) { (action) in
+            self.navigationController?.popToRootViewController(animated: true)
+        }
+        let cancelAlertAction = UIAlertAction(title: "キャンセル", style: .default) { (action) in
+            return
+        }
+
+        alert.addAction(okAlertAction)
+        alert.addAction(cancelAlertAction)
+        
+        present(alert, animated: true, completion: nil)
     }
     
     func saveMemoData() {
