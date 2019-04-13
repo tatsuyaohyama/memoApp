@@ -11,4 +11,6 @@ import RealmSwift
 
 class MyData: Object {
     @objc dynamic var memoData: String = ""
+    
+    @objc dynamic var creatememoDate = Date()
 }
