@@ -65,6 +65,7 @@ class DetailsViewController: UIViewController {
                 return
             } else {
                 myMemoData.memoData = self.memoTextView.text!
+                myMemoData.creatememoDate = Date()
                 let realm = try! Realm()
                 try! realm.write {
                     realm.add(myMemoData)

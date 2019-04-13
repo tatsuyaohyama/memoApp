@@ -37,7 +37,7 @@ class MemoListViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        getMemoData()
+        self.tableView.reloadData()
     }
 }
 
@@ -51,6 +51,9 @@ extension MemoListViewController: UITableViewDataSource {
             fatalError("The dequeued cell is not instance of MemoListCell.")
         }
         cell.memoTitleLabel.text = memoList[indexPath.row].memoData
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy/MM/dd' 'HH:mm:ss"
+        cell.nowDateLabel.text = formatter.string(from: memoList[indexPath.row].creatememoDate)
 
         return cell
     }
