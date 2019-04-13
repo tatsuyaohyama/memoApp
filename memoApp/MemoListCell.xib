@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,8 +20,14 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W5g-u0-9le">
-                        <rect key="frame" x="10" y="10" width="300" height="23.5"/>
+                        <rect key="frame" x="10" y="10" width="300" height="18.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AtA-4P-UFe">
+                        <rect key="frame" x="10" y="30" width="300" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -29,13 +35,18 @@
                 <constraints>
                     <constraint firstItem="W5g-u0-9le" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="3iP-pC-Jel"/>
                     <constraint firstAttribute="trailing" secondItem="W5g-u0-9le" secondAttribute="trailing" constant="10" id="54u-F7-O4R"/>
-                    <constraint firstAttribute="bottom" secondItem="W5g-u0-9le" secondAttribute="bottom" constant="10" id="MRI-rB-KxZ"/>
+                    <constraint firstItem="AtA-4P-UFe" firstAttribute="top" secondItem="W5g-u0-9le" secondAttribute="bottom" constant="1.5" id="Kgo-C7-OIZ"/>
+                    <constraint firstAttribute="bottom" secondItem="W5g-u0-9le" secondAttribute="bottom" constant="15" id="MRI-rB-KxZ"/>
+                    <constraint firstItem="AtA-4P-UFe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="ldw-bE-MpI"/>
                     <constraint firstItem="W5g-u0-9le" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="mKr-1E-CfV"/>
+                    <constraint firstAttribute="bottom" secondItem="AtA-4P-UFe" secondAttribute="bottom" id="n0K-OJ-FcJ"/>
+                    <constraint firstAttribute="trailing" secondItem="AtA-4P-UFe" secondAttribute="trailing" constant="10" id="v2J-Hv-geK"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="memoTitleLabel" destination="W5g-u0-9le" id="CE5-xa-dPP"/>
+                <outlet property="nowDateLabel" destination="AtA-4P-UFe" id="lQQ-ay-hRd"/>
             </connections>
             <point key="canvasLocation" x="137.59999999999999" y="154.72263868065968"/>
         </tableViewCell>

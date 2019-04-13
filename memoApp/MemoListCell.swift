@@ -11,6 +11,8 @@ import UIKit
 class MemoListCell: UITableViewCell {
 
     @IBOutlet var memoTitleLabel: UILabel!
+    
+    @IBOutlet var nowDateLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
